@@ -1,8 +1,8 @@
 {
     // JavaScript/TypeScript
     "biome_lsp.trace.server": "verbose",
-    "biome.requireConfiguration": false,
-    "biome.lspBin": "${workspaceFolder}/frontend/node_modules/@biomejs/biome/bin/biome",
+    "biome.requireConfiguration": true,
+    "biome.lspBin": "./frontend/node_modules/@biomejs/biome/bin/biome",
     "[javascript]": {
         "editor.defaultFormatter": "biomejs.biome",
         "editor.codeActionsOnSave": {

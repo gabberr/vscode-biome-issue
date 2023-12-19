@@ -1,0 +1,95 @@
+{
+  "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+  "vcs": {
+    "enabled": true,
+    "clientKind": "git",
+    "useIgnoreFile": true
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": false,
+      "a11y": {
+        "recommended": false,
+        "noBlankTarget": "error"
+      },
+      "correctness": {
+        "recommended": false,
+        "noRenderReturnValue": "error",
+        "noUnusedVariables": "error",
+        "noUnusedLabels": "error",
+        "noUnreachable": "error",
+        "noChildrenProp": "error",
+        "useIsNan": "error"
+      },
+      "complexity": {
+        "recommended": false,
+        "noWith": "error"
+      },
+      "nursery": {
+        "recommended": false,
+        "noDuplicateJsonKeys": "error"
+      },
+      "security": {
+        "recommended": false,
+        "noDangerouslySetInnerHtml": "error",
+        "noDangerouslySetInnerHtmlWithChildren": "error"
+      },
+      "suspicious": {
+        "recommended": false,
+        "noConsoleLog": "error",
+        "noDuplicateCase": "error",
+        "noDuplicateClassMembers": "error",
+        "noDuplicateJsxProps": "error",
+        "noDuplicateObjectKeys": "error",
+        "noDuplicateParameters": "error",
+        "noRedeclare": "error",
+        "noShadowRestrictedNames": "error",
+        "noFallthroughSwitchClause": "error",
+        "noFunctionAssign": "error",
+        "noSelfCompare": "error",
+        "noDoubleEquals": "error",
+        "noDebugger": "error",
+        "noArrayIndexKey": "error"
+      },
+      "style": {
+        "recommended": false,
+        "noVar": "error",
+        "noUselessElse": "error"
+      }
+    }
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "include": ["./src/**/*"],
+    "ignore": [".vscode/**/*"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": true,
+    "indentStyle": "space",
+    "indentWidth": 2,
+    "lineWidth": 80
+  },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "arrowParentheses": "always",
+      "trailingComma": "es5",
+      "lineEnding": "lf",
+      "semicolons": "asNeeded"
+    }
+  },
+  "json": {
+    "parser": {
+      "allowComments": true
+    },
+    "formatter": {
+      "enabled": false
+    }
+  }
+}
