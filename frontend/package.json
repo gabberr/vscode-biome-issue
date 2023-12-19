@@ -1,0 +1,11 @@
+{
+  "name": "biome-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@biomejs/biome": "^1.4.1"
+  }
+}
